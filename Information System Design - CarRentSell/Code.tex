@@ -1,0 +1,550 @@
+\chapter{Project Source Code}
+
+\begin{spverbatim}
+// Add_Product.cs
+
+ protected void ButtonAdd_Click(object sender, EventArgs e)
+    {
+
+
+        string CS = ConfigurationManager.ConnectionStrings
+["CustomerInfoConnectionString"].ConnectionString;
+
+        if (FileImage.HasFile)
+        {
+            SavePath = Server.MapPath("~/Images/ProductImage/") + PID;
+            if (!Directory.Exists(SavePath))
+            {
+                Directory.CreateDirectory(SavePath);
+
+            }
+            Extention = Path.GetExtension(FileImage.PostedFile.FileName);
+            FileImage.SaveAs(SavePath + "\\" + TextBoxCarName.Text.ToString().Trim() + TextBoxCarModel.Text + Extention);
+
+
+        }
+
+
+        using (SqlConnection con = new SqlConnection(CS))
+        {
+            SqlCommand command = new SqlCommand("insert into ProductDetails values('" + TextBoxCarName.Text + "', '" + TextBoxCarModel.Text + "', '" + TextBoxCarPrice.Text + "', '" + TextBoxCarName.Text + TextBoxCarModel.Text.ToString().Trim() + "', '" + Extention + "', '" + TextBoxDescription.Text + "', '" + TextBoxReviewLink.Text + "')", con);
+
+            con.Open();
+            command.ExecuteNonQuery();
+
+            LabelAdd.Text = "Successfully Added ! ";
+            TextBoxCarName.Text = "";
+            TextBoxCarPrice.Text = "";
+            TextBoxCarModel.Text = "";
+            
+
+        }
+
+
+    }
+\end{spverbatim}
+
+\begin{spverbatim}
+
+// Admin.cs
+
+public partial class Admin : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btn_add_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/AddProduct.aspx");
+    }
+
+    protected void btn_update_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btn_rent_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/ViewCarRentOrder.aspx");
+    }
+
+    protected void btn_sell_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/ViewTestDriveOrder.aspx");
+    }
+}
+\end{spverbatim}
+
+\newpage
+
+\begin{spverbatim}
+// Comment_Box.cs
+
+public partial class CommentBox : System.Web.UI.Page
+{
+    string cs = ConfigurationManager.ConnectionStrings
+["CustomerInfoConnectionString"].ConnectionString;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            fillData();
+        }
+    }
+    //FillData method for filling Repeater Control with Data
+    private void fillData()
+    {
+        SqlConnection con = new SqlConnection(cs);
+        con.Open();
+        DataTable dt = new DataTable();
+        SqlDataAdapter adapt = new SqlDataAdapter("Select * from Review Order by Id Desc", con);
+        adapt.Fill(dt);
+        con.Close();
+        PagedDataSource pds = new PagedDataSource();
+        DataView dv = new DataView(dt);
+        pds.DataSource = dv;
+        pds.AllowPaging = true;
+        pds.PageSize = 4;
+        pds.CurrentPageIndex = PageNumber;
+        if (pds.PageCount > 1)
+        {
+            rptPaging.Visible = true;
+            ArrayList arraylist = new ArrayList();
+            for (int i = 0; i < pds.PageCount; i++)
+                arraylist.Add((i + 1).ToString());
+            rptPaging.DataSource = arraylist;
+            rptPaging.DataBind();
+        }
+        else
+        {
+            rptPaging.Visible = false;
+        }
+        Repeater1.DataSource = pds;
+        Repeater1.DataBind();
+    }
+}
+\end{spverbatim}
+
+\newpage
+
+\begin{spverbatim}
+// Car_Details.cs
+
+public partial class DetailsCar : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        string myid =  Request.QueryString["id"];
+
+        string CS = ConfigurationManager.ConnectionStrings
+["CustomerInfoConnectionString"].ConnectionString;
+
+        using (SqlConnection con = new SqlConnection(CS))
+        {
+            using (SqlCommand cmd = new SqlCommand("select * from ProductDetails where id='"+myid+"'", con))
+            {
+                using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                {
+                    DataTable dtBrands = new DataTable();
+                    sda.Fill(dtBrands);
+                    RepeaterProduct.DataSource = dtBrands;
+                    RepeaterProduct.DataBind();
+                }
+            }
+        }
+    }
+}
+\end{spverbatim}
+\newpage
+
+\begin{spverbatim}
+// Gallery.cs
+
+public partial class Gallery : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            BindProductRepeater();
+        }
+    }
+
+    private void BindProductRepeater()
+    {
+        string CS = ConfigurationManager.ConnectionStrings
+["CustomerInfoConnectionString"].ConnectionString;
+
+        using (SqlConnection con = new SqlConnection(CS))
+        {
+            using (SqlCommand cmd = new SqlCommand("select * from ProductDetails", con))
+            {               
+                using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                {
+                    DataTable dtBrands = new DataTable();
+                    sda.Fill(dtBrands);
+                    RepeaterProduct.DataSource = dtBrands;
+                    RepeaterProduct.DataBind();
+                }
+            }
+        }
+    }
+
+    protected void TestDrive_Click(object sender, EventArgs e)
+    {
+        Button btn = (sender as Button);
+        string id = btn.CommandArgument;
+        // Session["id"] = id;
+        Response.Redirect("Sell.aspx?id=" + id);
+      
+    }
+
+}
+\end{spverbatim}
+\newpage
+
+\begin{spverbatim}
+//Car_Rent.cs
+
+public partial class Rent : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            BindProductRepeater();
+        }
+    }
+
+    private void BindProductRepeater()
+    {
+        string CS = ConfigurationManager.ConnectionStrings
+["CustomerInfoConnectionString"].ConnectionString;
+
+        using (SqlConnection con = new SqlConnection(CS))
+        {
+            using (SqlCommand cmd = new SqlCommand("select * from CarRent", con))
+            {
+                using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                {
+                    DataTable dtBrands = new DataTable();
+                    sda.Fill(dtBrands);
+                    RepeaterProduct.DataSource = dtBrands;
+                    RepeaterProduct.DataBind();
+
+                }
+            }
+        }
+    }
+
+    protected void ButtonOrderRent_Click(object sender, EventArgs e)
+    {
+        Button btn = (sender as Button);
+        string id = btn.CommandArgument;
+        // Session["id"] = id;
+        Response.Redirect("Signup.aspx?id=" + id);
+    }
+}
+\end{spverbatim}
+\newpage
+
+\begin{spverbatim}
+// Search_Car.cs
+
+public partial class Search : System.Web.UI.Page
+{
+    string val;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if((string)(Session["key"]) != null)
+        {
+            val = (string)(Session["key"]);
+
+            string CS = ConfigurationManager.ConnectionStrings
+["CustomerInfoConnectionString"].ConnectionString;
+
+            string s = "";
+            s += "'";
+            s += val;
+            s += "%";
+            s += "'";
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                using (SqlCommand cmd = new SqlCommand("select * from ProductDetails where CarName like " + s, con))
+                {
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dtBrands = new DataTable();
+                        sda.Fill(dtBrands);
+                        RepeaterProduct.DataSource = dtBrands;
+                        RepeaterProduct.DataBind();
+                    }
+                }
+            }
+
+        }
+
+
+        Session["key"] = null;
+        
+    }
+\end{spverbatim}
+\newpage
+
+\begin{spverbatim}
+// Sell_Car.cs
+
+public partial class Sell : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btnSignup_Click(object sender, EventArgs e)
+    {
+        if (tbFullName.Text != "" && tbEmail.Text != "" && tbAddress.Text != "" && tbContactNumber.Text != "" && tbNid.Text != ""  && tbDate.Text != "" )
+        {
+            string myid = Request.QueryString["id"];
+            string orderRequest = "Pending";
+
+            string CS = ConfigurationManager.ConnectionStrings
+["CustomerInfoConnectionString"].ConnectionString;
+
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                SqlCommand command = new SqlCommand("insert into TestdriveInfo values('" + tbFullName.Text + "', '" + tbEmail.Text + "', '" + tbNid.Text + "', '" + tbContactNumber.Text + "', '" + tbAddress.Text + "',  '" + tbDate.Text + "', '"+myid+"', '"+orderRequest+"')", con);
+                con.Open();
+                command.ExecuteNonQuery();
+                Label2.Visible = true;
+                Label2.Text = "Your request has been sent!";
+                Label1.Visible = false;
+
+                tbFullName.Text = "";               
+                tbAddress.Text = "";
+                tbNid.Text = "";
+                tbDate.Text = "";
+            }
+        }
+        else
+        {
+            Label1.Visible = true;
+            Label1.Text = "All fields are required!";
+            Label2.Visible = false;
+        }
+    }
+\end{spverbatim}
+\newpage
+
+\begin{spverbatim}
+// Signup.cs
+
+protected void btnSignup_Click(object sender, EventArgs e)
+    {
+        if (tbFullName.Text != "" && tbEmail.Text != "" && tbAddress.Text != "" && tbContactNumber.Text != "" && tbNid.Text != "" && tbCars.Text != "" && tbDate.Text != "" && tbHour.Text != "")
+        {
+                string CS = ConfigurationManager.ConnectionStrings["CustomerInfoConnectionString"].ConnectionString;
+
+            string orderRequest = "Pending";
+
+                string myid = Request.QueryString["id"];
+
+            using (SqlConnection con = new SqlConnection(CS))
+                {
+                    SqlCommand command = new SqlCommand("insert into RegistrationInfo values('" + tbFullName.Text + "', '" + tbEmail.Text + "', '" + tbNid.Text + "', '" + tbContactNumber.Text + "', '" + tbAddress.Text + "', '" + tbCars.Text + "', '"+tbDate.Text+ "', '" + tbHour.Text + "', '"+myid+"', '"+ orderRequest + "')", con);
+
+                    
+                    con.Open();
+                    command.ExecuteNonQuery();
+                    Label2.Visible = true;
+                    Label2.Text = "Your request has been sent!";
+                    Label1.Visible = false;
+
+                    tbFullName.Text = "";
+                    tbEmail.Text = "";
+                    tbContactNumber.Text = "";
+                    tbAddress.Text = "";
+                    tbNid.Text = "";
+                    tbCars.Text = "";
+                    tbDate.Text = "";
+                    tbHour.Text = "";
+              
+                }
+        }
+        else
+        {
+            Label1.Visible = true;
+            Label1.Text = "All fields are required!";
+            Label2.Visible = false;
+        }
+\end{spverbatim}
+\newpage
+
+\begin{spverbatim}
+//ViewCarRentOrder.cs
+
+protected void btnApprove_Click2(object sender, EventArgs e)
+    {
+        string CS = ConfigurationManager.ConnectionStrings["CustomerInfoConnectionString"].ConnectionString;
+
+        string a = "Approved";
+
+
+        using (SqlConnection con = new SqlConnection(CS))
+        {
+            SqlCommand command = new SqlCommand("update RegistrationInfo set OrderRequest = '" + a + "'where Id = '" + tbOrderId.Text + "'", con);
+
+            LabelApprove.Visible = true;
+            LabelApprove.Text = "Order Approved!";
+
+
+            con.Open();
+            command.ExecuteNonQuery();
+
+            //Fetching Settings from WEB.CONFIG file.  
+            string emailSender = "carrentsell2018@gmail.com";
+            string emailSenderPassword = "12345678Nn";
+            string emailSenderHost = "smtp.gmail.com";
+            int emailSenderPort = 587;
+            Boolean emailIsSSL = true;
+
+
+            //Fetching Email Body Text from EmailTemplate File.  
+            string FilePath = "C:\\Users\\Nitol Das Neel\\Documents\\Visual Studio 2017\\Projects\\CarRentSell2018\\CarRentSell2018\\EmailTemplates\\SignUp3.html";
+            StreamReader str = new StreamReader(FilePath);
+            string MailText = str.ReadToEnd();
+            str.Close();
+
+            //Repalce [newusername] = signup user name   
+            MailText = MailText.Replace("[newusername]", tbEmail.Text.Trim());
+
+
+            string subject = "Welcome to Car Rent & Sell";
+
+            //Base class for sending email  
+            MailMessage _mailmsg = new MailMessage();
+
+            //Make TRUE because our body text is html  
+            _mailmsg.IsBodyHtml = true;
+
+            //Set From Email ID  
+            _mailmsg.From = new MailAddress(emailSender);
+
+            //Set To Email ID  
+            _mailmsg.To.Add(tbEmail.Text.ToString());
+
+            //Set Subject  
+            _mailmsg.Subject = subject;
+
+            //Set Body Text of Email   
+            _mailmsg.Body = MailText;
+
+
+            //Now set your SMTP   
+            SmtpClient _smtp = new SmtpClient();
+
+            //Set HOST server SMTP detail  
+            _smtp.Host = emailSenderHost;
+
+            //Set PORT number of SMTP  
+            _smtp.Port = emailSenderPort;
+
+            //Set SSL --> True / False  
+            _smtp.EnableSsl = emailIsSSL;
+
+            //Set Sender UserEmailID, Password  
+            NetworkCredential _network = new NetworkCredential(emailSender, emailSenderPassword);
+            _smtp.Credentials = _network;
+
+            //Send Method will send your MailMessage create above.  
+            _smtp.Send(_mailmsg);
+        }
+    }
+\end{spverbatim}
+\newpage
+
+\begin{spverbatim}
+//ViewTestDriveOrder.cs
+
+protected void btnApprove_Click(object sender, EventArgs e)
+    {
+        string CS = ConfigurationManager.ConnectionStrings["CustomerInfoConnectionString"].ConnectionString;
+
+        string a = "Approved";
+
+
+        using (SqlConnection con = new SqlConnection(CS))
+        {
+            SqlCommand command = new SqlCommand("update TestdriveInfo set OrderRequest = '" + a + "'where Id = '" + tbOrderId.Text + "'", con);
+
+            LabelApprove.Visible = true;
+            LabelApprove.Text = "Order Approved!";
+
+
+            con.Open();
+            command.ExecuteNonQuery();
+
+            //Fetching Settings from WEB.CONFIG file.  
+            string emailSender = "carrentsell2018@gmail.com";
+            string emailSenderPassword = "12345678Nn";
+            string emailSenderHost = "smtp.gmail.com";
+            int emailSenderPort = 587;
+            Boolean emailIsSSL = true;
+
+
+            //Fetching Email Body Text from EmailTemplate File.  
+            string FilePath = "C:\\Users\\Nitol Das Neel\\Documents\\Visual Studio 2017\\Projects\\CarRentSell2018\\CarRentSell2018\\EmailTemplates\\SignUp.html";
+            StreamReader str = new StreamReader(FilePath);
+            string MailText = str.ReadToEnd();
+            str.Close();
+
+            //Repalce [newusername] = signup user name   
+            MailText = MailText.Replace("[newusername]", tbEmail.Text.Trim());
+
+
+            string subject = "Welcome to Car Rent & Sell";
+
+            //Base class for sending email  
+            MailMessage _mailmsg = new MailMessage();
+
+            //Make TRUE because our body text is html  
+            _mailmsg.IsBodyHtml = true;
+
+            //Set From Email ID  
+            _mailmsg.From = new MailAddress(emailSender);
+
+            //Set To Email ID  
+            _mailmsg.To.Add(tbEmail.Text.ToString());
+
+            //Set Subject  
+            _mailmsg.Subject = subject;
+
+            //Set Body Text of Email   
+            _mailmsg.Body = MailText;
+
+
+            //Now set your SMTP   
+            SmtpClient _smtp = new SmtpClient();
+
+            //Set HOST server SMTP detail  
+            _smtp.Host = emailSenderHost;
+
+            //Set PORT number of SMTP  
+            _smtp.Port = emailSenderPort;
+
+            //Set SSL --> True / False  
+            _smtp.EnableSsl = emailIsSSL;
+
+            //Set Sender UserEmailID, Password  
+            NetworkCredential _network = new NetworkCredential(emailSender, emailSenderPassword);
+            _smtp.Credentials = _network;
+
+            //Send Method will send your MailMessage create above.  
+            _smtp.Send(_mailmsg);
+
+        }
+
+    }
+\end{spverbatim}

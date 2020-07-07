@@ -1,0 +1,346 @@
+\chapter{Relationship Diagram and Class Diagram}
+ 
+\noindent 
+\paragraph{Introduction}
+
+\noindent \textbf{Class diagram} and \textbf{Entity Relationship Diagram(ERD)} both model is the structure of a system. \textbf{Class diagram} represent the dynamic aspects of a system, both the structural and behavioral features. \textbf{ERD} represents only structural features which provide a static view of the system.
+
+
+\noindent 
+
+\noindent 
+
+
+\section{ Entity Relationship Diagram (ERD)}
+
+\noindent An entity relationship model, also called an \textbf{Entity Relationship Diagram (ERD)} is a graphical representation of entities and their relationships to each other, typically used in computing in regard to the organization of data within databases or information systems. An \textbf{Entity Relationship Diagram (ERD)} shows the relationships of entity sets stored in a database. An entity in this context is a component of data. In other words, ER diagrams illustrate the logical structure of databases.
+
+\noindent A basic ER model is composed of entity types and specifies relationships that can exist between instances of those entity types. The 3 key components of ERD are:
+
+\begin{enumerate}
+\item  Entity
+
+\item  Relationship
+
+\item  Attribute
+\end{enumerate}
+
+\begin{figure}
+
+\subsection{ ER Diagram}
+
+\includegraphics*[width=6.3in, height=3in, keepaspectratio=false]{figures/erd}
+
+\caption{ER Diagram for Car Rent and Sell Website}
+
+\end{figure}
+
+
+
+\noindent 
+\subsection{ Entities}
+
+\noindent Entity will be real world object from problem domain and data will be stored in the database on entity. It is noun all time and distinguishable from other objects.
+
+\noindent In our project, we have the following entities in the ERD:
+
+\begin{enumerate}
+\item  Customer
+
+\item  Admin
+
+\item  Rent\_Car
+
+\item  Test\_Drive
+
+\item  Gallery
+
+\end{enumerate}
+
+\noindent 
+
+\noindent 
+
+\noindent 
+\newpage
+
+\subsection{ Relationships}
+
+\noindent The interaction between the entity set are called relationship. It is always a verb and creates association among two or more attributes.
+
+\noindent In our project, the relationships between the entity sets are:
+
+\noindent \textbf{Entity Set 1:} Customer, Rent\_Car
+
+\noindent \textbf{Relationship:} Order
+
+\noindent 
+
+\noindent \textbf{Entity Set 2:} Admin, Rent\_Car
+
+\noindent \textbf{Relationship:} Approve
+
+\noindent 
+
+\noindent \textbf{Entity Set 3:} Customer, Text\_Drive
+
+\noindent \textbf{Relationship:} Request
+
+\noindent 
+
+\noindent \textbf{Entity Set 4:} Admin, Text\_Drive
+
+\noindent \textbf{Relationship:} Arrange
+
+\noindent \textbf{Entity Set 5:} Admin, Gallery
+
+\noindent \textbf{Relationship:} ManagedBy
+
+\noindent 
+
+\noindent 
+\subsection{ Cardinality Constraints of Relationship}
+
+\noindent The maximum number of entity that can be associated with another entity via a relationship, are defined as cardinality ratio. It is most useful in describing binary sets of relationship sets. There are 4 types of cardinality constraints:
+
+\begin{enumerate}
+\item  Many to many
+
+\item  Many to one
+
+\item  One to many
+
+\item  One to one
+\end{enumerate}
+
+
+\noindent 
+
+
+\noindent 
+
+\subsection{ Attributes}
+
+\noindent The properties of entity or relationship are called attributes. An entity is basically described using a set of attributes. In our project, we have the following attributes of each entity in the ERD:
+
+\noindent \textbf{Entity Name: } Customer
+
+\noindent \textbf{Attributes:}
+
+\begin{enumerate}
+\item user\_id
+
+\item  name
+
+\item  email
+
+\item  password
+
+\item  address
+
+\item  nid
+\end{enumerate}
+
+\noindent
+
+\noindent \textbf{Entity Name: } Rent\_Car
+
+\noindent \textbf{Attributes:}
+
+\begin{enumerate}
+\item rent\_car\_id
+
+\item  car\_model
+
+\item  time\_period
+
+\item  date\_time
+
+\item  no\_of\_cars
+
+\end{enumerate}
+
+\noindent
+
+\noindent \textbf{Entity Name: } Admin
+
+\noindent \textbf{Attributes:}
+
+\begin{enumerate}
+\item admin \_id
+
+\item  password
+
+\item  email
+
+\item  address
+
+\item  phone
+
+\item  mobile
+
+\end{enumerate}
+
+\noindent
+
+\noindent \textbf{Entity Name: } Test\_Drive
+
+\noindent \textbf{Attributes:}
+
+\begin{enumerate}
+\item car\_id
+
+\item  user\_id
+
+\item  date\_time
+
+\item  car\_model
+
+\end{enumerate}
+
+\noindent
+
+\noindent \textbf{Entity Name: } Gallery
+
+\noindent \textbf{Attributes:}
+
+\begin{enumerate}
+\item car\_id
+
+\item  car\_model
+
+\item  car\_type
+
+\item  car\_company
+
+\item  price
+\end{enumerate}
+
+
+
+
+\noindent 
+
+\noindent 
+
+
+
+ 
+\section{ Class Diagram}
+
+\noindent Class diagrams are fundamental to the object modeling process and model the static structure of a system. Class diagrams is a snapshot that describes exactly how the system works, the relationships between system components at many levels, and how to implement those components.
+
+\noindent During the analysis and design phases of the development cycle, create class diagrams to perform the following functions:
+
+\begin{enumerate}
+\item  Define the structure of classes and other classifiers.
+\item  Define relationships between classes and classifiers.
+\item  Illustrate the structure of a model by using attributes, operations, and signals.
+\item  Show the common classifier roles and responsibilities that define the behavior of the system.
+\item  Show the implementation classes in a package.
+\item  Show the structure and behavior of one or more classes.
+\end{enumerate}
+
+\noindent 
+
+\subsection{Classification}
+\noindent Class Diagram has three parts:
+\begin{enumerate}
+\item  Class
+\item  Attribute
+\item  Method
+\end{enumerate}
+
+\noindent 
+\noindent  \textbf{1. Class}
+\noindent Classes represent an abstraction of entities with common characteristics.
+\noindent  \textbf{2. Attribute}
+\noindent An attribute is a named property of a class that describes the object being model. In class diagram, attributes appear in the second compartment just below the name compartment.
+\noindent  \textbf{3. Method}
+\noindent Method describe the class behavior and appear in the third compartment.
+
+
+\noindent 
+\subsection{Relationship}
+
+\noindent There are 4 types of relationships in a class diagram:
+
+\noindent 
+\subsubsection{ Inheritance}
+
+\noindent Inheritance refers to the ability of one class (child class) to~inherit~the identical functionality of another class (parent class), and then add new functionality of its own. The advantage of inheritance is if we want to add or change attributes of the child classes, we don't have to change the subclasses, we can only change the super class and it applies across all sub classes.
+
+
+\noindent 
+\subsubsection{ Association}
+
+\noindent The simplest type of relationship is association, whose presence or absence does not affect in the whole scenario of the class diagram. Associations are shown as a simple line on a class diagram.
+
+
+\noindent 
+
+
+\noindent 
+\subsubsection{ Aggregation}
+
+\noindent Aggregation offers a means of showing that the whole object is composed of the sum of its parts. It is often described as a ``has'' relationship. The diamond in the end of the relationship line is not filled in here. It is a special type of association that specifies the whole and its parts.
+
+
+\noindent 
+
+
+\noindent 
+\subsubsection{ Composition}
+
+\noindent Composition is a whole/ part relationship in which the whole has a responsibility for the part, is a stronger relationship. It is usually shown with a filled-in diamond. The classes which are related through composition relationship are dependent on each other.
+
+
+
+\noindent
+
+\subsection{ Visibility}
+\noindent We use visibility markers to signify who can access the information contained within a class. Private visibility, denoted with a - sign, hides information from anything outside the class partition. Public visibility, denoted with a + sign, allows all other classes to view the marked information. Protected visibility, denoted with a \# sign, allows child classes to access information they inherited from a parent class.
+
+\noindent
+\noindent
+
+\subsection{ Classes of our project}
+\noindent The class names are listed below:
+
+\begin{enumerate}
+\item  Customer
+\item  Rent\_Car
+\item  Admin
+\item  Gallery
+\item  Test\_Drive
+\item  Review
+\end{enumerate}
+
+\noindent
+
+\subsection{ Class Diagram}
+
+\begin{figure}
+
+\noindent The class diagram of Car Rent and Sell Website is given below:
+
+\noindent \includegraphics*[width=5.48in, height=7.2in, keepaspectratio=false]{figures/ClassDiagram}
+\caption{Class Diagram Of Car Rent and Sell Website}
+\end{figure}
+\noindent 
+
+
+\noindent 
+\section{ Conclusion}
+
+\noindent A use case diagram provides project planning skeleton. We have thought through every user’s needs and designed our class diagram. The entity relationship diagram (ERD) is the logical structure of database and shows relationships of entity sets stored in a database. We have illustrated all the entities, attributes, data types and relationships of our entity relationship diagram. Above mentioned diagrams will help us to visualize the whole system more evidently
+
+
+\noindent 
+
+\noindent 
+
+
+
+
+

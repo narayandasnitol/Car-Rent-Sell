@@ -1,0 +1,67 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1} Project Goal}{1}
+\contentsline {section}{\numberline {1.2} Features}{2}
+\contentsline {section}{\numberline {1.3} Feasibility Analysis}{2}
+\contentsline {subsection}{\numberline {1.3.1} Technical Feasibility }{3}
+\contentsline {subsection}{\numberline {1.3.2} Economical Feasibility }{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsection}{\numberline {1.3.3} Operational Feasibility }{4}
+\contentsline {section}{\numberline {1.4} Cost and Benefit Analysis}{4}
+\contentsline {subsection}{\numberline {1.4.1} Cash Flow Analysis}{5}
+\contentsline {subsection}{\numberline {1.4.2} Present Value Analysis}{5}
+\contentsline {section}{\numberline {1.5} Project Scheduling}{6}
+\contentsline {subsection}{\numberline {1.5.1} Gantt Chart}{7}
+\contentsline {section}{\numberline {1.6} Conclusion}{7}
+\contentsline {chapter}{\numberline {2}Information Gathering}{8}
+\contentsline {paragraph}{\relax \fontsize {14.4}{18}\selectfont Introduction }{8}
+\contentsline {section}{\numberline {2.1} Objectives of Information Gathering \& \newline Interview}{8}
+\contentsline {section}{\numberline {2.2} Questionnaire \& Interview Pattern}{8}
+\contentsline {section}{\numberline {2.3} Reason To Select Interview Personnel}{9}
+\contentsline {subsection}{\numberline {2.3.1} Interview Questions \& Answers }{10}
+\contentsline {section}{\numberline {2.4}Revised Requirement Analysis}{11}
+\contentsline {section}{\numberline {2.5} The list of Activities}{11}
+\contentsline {section}{\numberline {2.6} Conclusion}{12}
+\contentsline {chapter}{\numberline {3}Data Flow Diagram and Use Case Diagram}{13}
+\contentsline {paragraph}{\relax \fontsize {14.4}{18}\selectfont {Introduction}}{13}
+\contentsline {section}{\numberline {3.1}Activities of the project}{13}
+\contentsline {section}{\numberline {3.2}Main Process}{14}
+\contentsline {section}{\numberline {3.3}Sub Processes}{14}
+\contentsline {section}{\numberline {3.4}Entity Names}{15}
+\contentsline {section}{\numberline {3.5}Database Names}{15}
+\contentsline {section}{\numberline {3.6}Data Flow Diagram Levels}{15}
+\contentsline {section}{\numberline {3.7}Context Level Diagram}{15}
+\contentsline {section}{\numberline {3.8}Level 1 Diagram}{17}
+\contentsline {section}{\numberline {3.9}Level 2 Diagram}{18}
+\contentsline {section}{\numberline {3.10}Use Case Diagram}{23}
+\contentsline {subsection}{\numberline {3.10.1}Actors}{23}
+\contentsline {subsection}{\numberline {3.10.2}Details of Use Case Models}{23}
+\contentsline {subsection}{\numberline {3.10.3}Association}{24}
+\contentsline {subsection}{\numberline {3.10.4}Include}{24}
+\contentsline {subsection}{\numberline {3.10.5}Extend}{24}
+\contentsline {subsection}{\numberline {3.10.6}Generalization/ Inheritance}{25}
+\contentsline {section}{\numberline {3.11}Use Case Models}{25}
+\contentsline {section}{\numberline {3.12}Conclusion}{25}
+\contentsline {chapter}{\numberline {4}Relationship Diagram and Class Diagram}{26}
+\contentsline {paragraph}{Introduction}{26}
+\contentsline {section}{\numberline {4.1} Entity Relationship Diagram (ERD)}{26}
+\contentsline {subsection}{\numberline {4.1.1} ER Diagram}{27}
+\contentsline {subsection}{\numberline {4.1.2} Entities}{27}
+\contentsline {subsection}{\numberline {4.1.3} Relationships}{28}
+\contentsline {subsection}{\numberline {4.1.4} Cardinality Constraints of Relationship}{28}
+\contentsline {subsection}{\numberline {4.1.5} Attributes}{28}
+\contentsline {section}{\numberline {4.2} Class Diagram}{30}
+\contentsline {subsection}{\numberline {4.2.1}Classification}{30}
+\contentsline {subsection}{\numberline {4.2.2}Relationship}{30}
+\contentsline {subsubsection}{ Inheritance}{30}
+\contentsline {subsubsection}{ Association}{31}
+\contentsline {subsubsection}{ Aggregation}{31}
+\contentsline {subsubsection}{ Composition}{31}
+\contentsline {subsection}{\numberline {4.2.3} Visibility}{31}
+\contentsline {subsection}{\numberline {4.2.4} Classes of our project}{31}
+\contentsline {subsection}{\numberline {4.2.5} Class Diagram}{31}
+\contentsline {section}{\numberline {4.3} Conclusion}{33}
+\contentsline {chapter}{\numberline {5}Discussion}{34}
+\contentsline {paragraph}{\relax \fontsize {12}{14}\selectfont {Conclusion}}{34}
+\contentsline {section}{\numberline {5.1} Limitation}{34}
+\contentsline {section}{\numberline {5.2} Future Work}{35}

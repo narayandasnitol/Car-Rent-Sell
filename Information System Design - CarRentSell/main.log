@@ -1,0 +1,544 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.8)  23 SEP 2018 20:47
+entering extended mode
+**./main.tex
+(main.tex
+LaTeX2e <2018-04-01> patch level 5
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\repo
+rt.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size
+10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\b
+abel.sty"
+Package: babel 2018/06/05 3.22 The Babel package
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\s
+witch.def"
+File: switch.def 2018/06/05 3.22 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bbl
+opts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-eng
+lish\english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\b
+abel.def"
+File: babel.def 2018/06/05 3.22 Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\t
+xtbabel.def")
+\bbl@dirlevel=\count90
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\
+trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-
+cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-
+def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+
+LaTeX Warning: Unused global option(s):
+    [twosides].
+
+(main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\su
+pp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count91
+\scratchdimen=\dimen106
+\scratchbox=\box26
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen107
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
+\everyMPtoPDFconversion=\toks16
+)
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\
+epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\
+grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\
+kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\pdftexcmds.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\Nitol Das Neel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdie
+k\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+<figures/logo.png, id=1, 150.5625pt x 200.75pt>
+File: figures/logo.png Graphic file (type png)
+<use figures/logo.png>
+Package pdftex.def Info: figures/logo.png  used on input line 15.
+(pdftex.def)             Requested size: 60.22392pt x 80.29857pt.
+ [1
+
+{C:/Users/Nitol Das Neel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./
+figures/logo.png>] (main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+ [1
+
+])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [2] (main.lof)
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
+ [3
+
+]
+(main.lot)
+\tf@lot=\write5
+\openout5 = `main.lot'.
+
+ [4
+
+]
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
+
+ []
+
+[1
+
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+<figures/CostBenifit.png, id=29, 515.526pt x 272.217pt>
+File: figures/CostBenifit.png Graphic file (type png)
+<use figures/CostBenifit.png>
+Package pdftex.def Info: figures/CostBenifit.png  used on input line 178.
+(pdftex.def)             Requested size: 383.04866pt x 216.81853pt.
+
+Overfull \hbox (38.04866pt too wide) in paragraph at lines 178--179
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+<figures/CashFlow.png, id=32, 543.2295pt x 303.534pt>
+File: figures/CashFlow.png Graphic file (type png)
+<use figures/CashFlow.png>
+Package pdftex.def Info: figures/CashFlow.png  used on input line 191.
+(pdftex.def)             Requested size: 398.21204pt x 216.80746pt.
+
+Overfull \hbox (53.21204pt too wide) in paragraph at lines 191--192
+[][] 
+ []
+
+<figures/PV.png, id=34, 590.205pt x 378.81525pt>
+File: figures/PV.png Graphic file (type png)
+<use figures/PV.png>
+Package pdftex.def Info: figures/PV.png  used on input line 198.
+(pdftex.def)             Requested size: 412.67238pt x 173.44789pt.
+
+Overfull \hbox (67.67238pt too wide) in paragraph at lines 198--199
+[] 
+ []
+
+
+LaTeX Warning: Float too large for page by 47.44275pt on input line 200.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+<figures/PS.png, id=36, 542.62724pt x 304.13625pt>
+File: figures/PS.png Graphic file (type png)
+<use figures/PS.png>
+Package pdftex.def Info: figures/PS.png  used on input line 211.
+(pdftex.def)             Requested size: 383.0242pt x 216.81534pt.
+
+Overfull \hbox (38.0242pt too wide) in paragraph at lines 211--212
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+<figures/gannt_chart.png, id=38, 638.98724pt x 263.7855pt>
+File: figures/gannt_chart.png Graphic file (type png)
+<use figures/gannt_chart.png>
+Package pdftex.def Info: figures/gannt_chart.png  used on input line 223.
+(pdftex.def)             Requested size: 398.21553pt x 216.81265pt.
+
+Overfull \hbox (53.21553pt too wide) in paragraph at lines 223--224
+[] 
+ []
+
+(Chapter2.tex [3] [4 <./figures/CostBenifit.png>] [5 <./figures/CashFlow.png> <
+./figures/PV.png>] [6 <./figures/PS.png>] [7 <./figures/gannt_chart.png>]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Overfull \hbox (0.54596pt too wide) in paragraph at lines 25--26
+[]\OT1/cmr/bx/n/10 Interview of the au-thor-ity :\OT1/cmr/m/n/10 We in-ter-view
+ed Mr. Tan-vir Ahmed Iftekhar
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 50--50
+\OT1/cmr/m/n/10 We have got a clear idea of the
+ []
+
+
+Overfull \hbox (30.66876pt too wide) in paragraph at lines 46--52
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+
+ []
+
+[10] [11]) (Chapter3.tex [12]
+Chapter 3.
+[13
+
+] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+<figures/C0.png, id=88, 496.85625pt x 108.405pt>
+File: figures/C0.png Graphic file (type png)
+<use figures/C0.png>
+Package pdftex.def Info: figures/C0.png  used on input line 184.
+(pdftex.def)             Requested size: 433.6261pt x 397.5937pt.
+
+Overfull \hbox (88.6261pt too wide) in paragraph at lines 184--185
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+<figures/C1.png, id=89, 616.55344pt x 546.54187pt>
+File: figures/C1.png Graphic file (type png)
+<use figures/C1.png>
+Package pdftex.def Info: figures/C1.png  used on input line 204.
+(pdftex.def)             Requested size: 397.49046pt x 521.1049pt.
+
+Overfull \hbox (52.49046pt too wide) in paragraph at lines 204--205
+[] 
+ []
+
+
+LaTeX Warning: Float too large for page by 75.95209pt on input line 211.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+<figures/SelectCar.png, id=90, 616.55344pt x 346.29375pt>
+File: figures/SelectCar.png Graphic file (type png)
+<use figures/SelectCar.png>
+Package pdftex.def Info: figures/SelectCar.png  used on input line 236.
+(pdftex.def)             Requested size: 411.9503pt x 229.09882pt.
+
+Overfull \hbox (66.9503pt too wide) in paragraph at lines 236--237
+[] 
+ []
+
+<figures/Registration.png, id=92, 616.55344pt x 346.29375pt>
+File: figures/Registration.png Graphic file (type png)
+<use figures/Registration.png>
+Package pdftex.def Info: figures/Registration.png  used on input line 260.
+(pdftex.def)             Requested size: 469.76146pt x 252.95085pt.
+
+Overfull \hbox (124.76146pt too wide) in paragraph at lines 260--261
+[] 
+ []
+
+<figures/Cancel.png, id=94, 290.58563pt x 270.25969pt>
+File: figures/Cancel.png Graphic file (type png)
+<use figures/Cancel.png>
+Package pdftex.def Info: figures/Cancel.png  used on input line 288.
+(pdftex.def)             Requested size: 469.78839pt x 240.66644pt.
+
+Overfull \hbox (124.78839pt too wide) in paragraph at lines 288--289
+[] 
+ []
+
+<figures/Update.png, id=96, 178.41656pt x 362.10281pt>
+File: figures/Update.png Graphic file (type png)
+<use figures/Update.png>
+Package pdftex.def Info: figures/Update.png  used on input line 310.
+(pdftex.def)             Requested size: 397.50507pt x 216.81029pt.
+
+Overfull \hbox (52.50507pt too wide) in paragraph at lines 310--311
+[] 
+ []
+
+<figures/Review.png, id=98, 696.35156pt x 373.395pt>
+File: figures/Review.png Graphic file (type png)
+<use figures/Review.png>
+Package pdftex.def Info: figures/Review.png  used on input line 326.
+(pdftex.def)             Requested size: 397.48766pt x 216.80855pt.
+
+Overfull \hbox (52.48766pt too wide) in paragraph at lines 326--327
+[] 
+ []
+
+[15] [16 <./figures/C0.png>] [17 <./figures/C1.png>] [18 <./figures/SelectCar.p
+ng>] [19 <./figures/Registration.png>] [20 <./figures/Cancel.png>]
+
+LaTeX Warning: Float too large for page by 118.80539pt on input line 427.
+
+<figures/use.png, id=122, 469.755pt x 352.4805pt>
+File: figures/use.png Graphic file (type png)
+<use figures/use.png>
+Package pdftex.def Info: figures/use.png  used on input line 472.
+(pdftex.def)             Requested size: 398.20412pt x 289.08427pt.
+
+Overfull \hbox (53.20412pt too wide) in paragraph at lines 472--473
+[] 
+ []
+
+
+LaTeX Warning: Float too large for page by 93.87567pt on input line 481.
+
+) (Chapter4.tex [21 <./figures/Update.png>] [22 <./figures/Review.png>]
+[23] [24] [25 <./figures/use.png>]
+Chapter 4.
+<figures/erd.png, id=143, 508.518pt x 518.0445pt>
+File: figures/erd.png Graphic file (type png)
+<use figures/erd.png>
+Package pdftex.def Info: figures/erd.png  used on input line 32.
+(pdftex.def)             Requested size: 455.3109pt x 216.81044pt.
+
+Overfull \hbox (110.3109pt too wide) in paragraph at lines 32--33
+[] 
+ []
+
+[26
+
+] [27 <./figures/erd.png>] [28] [29] [30]
+<figures/ClassDiagram.png, id=163, 469.098pt x 522.6435pt>
+File: figures/ClassDiagram.png Graphic file (type png)
+<use figures/ClassDiagram.png>
+Package pdftex.def Info: figures/ClassDiagram.png  used on input line 327.
+(pdftex.def)             Requested size: 396.03667pt x 520.35341pt.
+
+Overfull \hbox (51.03667pt too wide) in paragraph at lines 327--328
+[] 
+ []
+
+
+LaTeX Warning: Float too large for page by 4.18674pt on input line 329.
+
+[31] [32 <./figures/ClassDiagram.png>]) (Chapter5.tex [33]
+Chapter 5.
+[34
+
+]) [35] (main.aux) ) 
+Here is how much of TeX's memory you used:
+ 2065 strings out of 492973
+ 31529 string characters out of 3122704
+ 105026 words of memory out of 3000000
+ 5896 multiletter control sequences out of 15000+200000
+ 6370 words of font info for 23 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,9n,25p,851b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Nitol Das Neel/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Nitol Das Neel/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Nitol
+ Das Neel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Users/Nitol Das Neel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb>
+Output written on main.pdf (40 pages, 1239249 bytes).
+PDF statistics:
+ 198 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+
